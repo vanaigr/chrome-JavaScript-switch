@@ -1,0 +1,19 @@
+{
+  "name": "JavaScript switch",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["contentSettings", "tabs"],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "commands": {
+    "toggle-disable": {
+      "suggested_key": "Alt+Shift+K",
+      "description": "Toggle JavaScript off/default for this domain"
+    },
+    "toggle-enable": {
+      "suggested_key": "Alt+Shift+J",
+      "description": "Toggle JavaScript on/default for this domain"
+    }
+  }
+}
